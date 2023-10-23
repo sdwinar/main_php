@@ -20,6 +20,7 @@ include "views/main/head.php";
     } else { 
         include "views/main/navbar.php";
         include "views/home/01_welcome.php";
+        include "views/home/02_time_line.php";
    
     
     }
