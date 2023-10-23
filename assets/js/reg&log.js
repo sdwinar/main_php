@@ -4,7 +4,11 @@ $(document).ready(function(){
             $("#registerForm").toggle();
             var currentTitle = $("#formTitle").text();
             var newTitle = currentTitle === "Login" ? "Register" : "Login";
+            var newTitle_aks = currentTitle === "Login" ? "Login" : "Register";
+            var newTitle_aks_by = currentTitle !== "Login" ? "Don't have an account?" : "Do you already have an account?";
             $("#formTitle").text(newTitle);
+            $("#toggleForm").text(newTitle_aks + ' '+ 'here');
+            $("#login_ask").text(newTitle_aks_by);
             return false;
         });
 

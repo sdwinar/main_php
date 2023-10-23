@@ -45,7 +45,7 @@
                     </form>
                 </div>
                 <div class="card-footer">
-                    <p>Don't have an account? <a href="#" id="toggleForm">Register here</a></p>
+                    <p id="login_ask">Don't have an account? </p><a href="#" id="toggleForm">Register here</a>
                 </div>
             </div>
         </div>
