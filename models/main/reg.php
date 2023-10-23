@@ -22,6 +22,12 @@ if (isset($_POST['btnsendreg'])) {
     }elseif ($isusername>0) {
         $msg = 'sorry... this username is not available.';
 
+    }elseif (hasNoEnglishLetters($username)) {
+        $msg = 'sorry, use only english letters in username input.';
+
+    }elseif (!hasNoSpacesBetweenLetters($username)) {
+        $msg = 'sorry, username String has spaces between letters.';
+
     }elseif(empty($password)){
         $msg = 'please enter your password';
 
@@ -29,7 +35,7 @@ if (isset($_POST['btnsendreg'])) {
         $msg = 'Please... the password must be at least four characters.';
 
     }elseif ($password != $re_password ) {
-        $msg = 'Iam sorry... the passwords do not match.';
+        $msg = ' sorry... the passwords do not match.';
 
     }else{
         $newpass = sha1($password . '@%00&#$%@@@@$*');

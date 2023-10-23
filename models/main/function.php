@@ -11,6 +11,17 @@ function mksave($data)
     $data = addslashes($data);
     return $data;
 }
+// **********************************************hasNoEnglishLetters****************************************************************
+
+function hasNoEnglishLetters($inputString) {
+    return !preg_match('/[a-zA-Z]/', $inputString);
+}
+
+// **********************************************NoSpacesBetweenLetters****************************************************************
+function hasNoSpacesBetweenLetters($inputString) {
+
+    return !preg_match('/[a-zA-Z]\s+[a-zA-Z]/', $inputString);
+}
 // **********************************************chekviews****************************************************************
 function chekviews($item, $froms, $id, $plus = "")
 {
