@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="assets/css/all.min.css">
     <title>
     <?php
-       echo isset($headname) ? $headname : 'SUSS';
+       echo isset($headname) ? $headname : 'main_php';
         ?>
     </title>
 </head>
+<body>
+    <?php
+    ?>
